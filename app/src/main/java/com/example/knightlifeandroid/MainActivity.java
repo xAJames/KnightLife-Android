@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
             editor.putBoolean("newYear", false);
-//            editor.putBoolean("newYear", true); // for debugging purposes to check if get started screen is still working
+//            editor.putBoolean("newYear", true); // for debugging purposes, to check if get started screen is still working
             editor.apply();
         }
     }
