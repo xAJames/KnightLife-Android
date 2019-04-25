@@ -49,11 +49,9 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
         mTextMessage = findViewById(R.id.message);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
     }
 
     public void newYear(boolean newYear, SharedPreferences.Editor editor) {
-
         if(newYear) {
             Intent intent = new Intent(this, GetStartedActivity.class);
             startActivity(intent);
@@ -62,5 +60,9 @@ public class MainActivity extends AppCompatActivity {
 //            editor.putBoolean("newYear", true); // for debugging purposes, to check if get started screen is still working
             editor.apply();
         }
+    }
+
+    public void createBlocks() {
+
     }
 }
